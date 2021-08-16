@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "dff4e74d-6d08-413e-a37f-74f69fedd717",
+		"name": "node_postgre_backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/user/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"abdfgdfgh@gmail.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				},
+				"description": "{\n    \"email\": \"abdfgdfgh@gmail.com\",\n    \"password\": \"123456\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/user/addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ashish Punewala\",\n    \"email\": \"abdfgdfgh@gmail.com\",\n    \"password\": \"123456\",\n    \"mobile\": \"8175963556\",\n    \"user_type_id\":2,\n    \"state_id\": 1,\n    \"city_id\": 1\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/addUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"addUser"
+					]
+				},
+				"description": "{\n    \"name\": \"Ashish Punewala\",\n    \"email\": \"abdfgdfgh@gmail.com\",\n    \"password\": \"123456\",\n    \"mobile\": \"8175963556\",\n    \"user_type_id\":2,\n    \"state_id\": 1,\n    \"city_id\": 1\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/city/createCity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"city_name\":\"Alwar\",\n    \"state_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/city/createCity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"city",
+						"createCity"
+					]
+				},
+				"description": "{\n    \"city_name\":\"Alwar\",\n    \"state_id\": 1\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/state/createState",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"state_name\":\"Rajasthan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/state/createState",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"state",
+						"createState"
+					]
+				},
+				"description": "{\n    \"state_name\":\"Uttar Pradesh\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/user/createUserType",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_type_name\": \"Educator\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/user/createUserType",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"createUserType"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/user/getAllUserType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/user/getAllUserType",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"getAllUserType"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/state/getAllStates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/getAllStates",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getAllStates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/city/getAllCity",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"city_name\":\"Kanpur\",\n    \"state_id\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/city/createCity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"city",
+						"createCity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/city/getCities/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"city_name\":\"Lucknow\",\n    \"state_id\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/city/getCities/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"city",
+						"getCities",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
